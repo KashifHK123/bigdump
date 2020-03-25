@@ -883,25 +883,10 @@ skin_open();
 
     if ($linenumber<$_REQUEST["start"]+$linespersession)
     { echo ("<p class=\"successcentr\">Congratulations: End of file reached, assuming OK</p>\n");
-      echo ("<p class=\"successcentr\">IMPORTANT: REMOVE YOUR DUMP FILE and BIGDUMP SCRIPT FROM SERVER NOW!</p>\n");
-      echo ("<p class=\"centr\">Thank you for using this tool! Please rate <a href=\"http://www.hotscripts.com/listing/bigdump/?RID=403\" target=\"_blank\">Bigdump at Hotscripts.com</a></p>\n");
-      echo ("<p class=\"centr\">You can send me some bucks or euros as appreciation via PayPal. Thank you!</p>\n");
+      echo ("<p class=\"successcentr\">IMPORTANT: REMOVE YOUR DUMP FILE and BIGDUMP SCRIPT FROM SERVER NOW!</p>\n"); 
 ?>
 
-<!-- Start Paypal donation code -->
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_xclick" />
-<input type="hidden" name="business" value="alexey@ozerov.de" />
-<input type="hidden" name="item_name" value="BigDump Donation" />
-<input type="hidden" name="no_shipping" value="1" />
-<input type="hidden" name="no_note" value="0" />
-<input type="hidden" name="tax" value="0" />
-<input type="hidden" name="bn" value="PP-DonationsBF" />
-<input type="hidden" name="lc" value="US" />
-<input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form>
-<!-- End Paypal donation code -->
+ 
 
 <?php      
       do_action('script_finished');
